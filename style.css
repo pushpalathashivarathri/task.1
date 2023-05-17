@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  nav {
+    padding: 20px;
+    background: rgb(41, 37, 41); 
+    color: cornsilk;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .mainmenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainmenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: cornsilk;
+    font-size: 1.5rem;
+  }
+  nav .mainmenu li {
+    padding: 5px;
+    font-size: large;
+  }
+  nav .openmenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainmenu .closemenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .contact {
+    width: 65%;
+    display: flex;
+    padding: 32px;
+    margin: 15px;
+    align-items: center;
+  }
+  .contact img {
+    border-radius: 36%;
+    width: 230px;
+  }
+  .details {
+    padding: 30px;
+    margin: 5px;
+  }
+  .contctsec {
+    display: flex;
+    align-items: center;
+  }
+  .icons {
+    width: 30%;
+    padding: 7px;
+    margin: 50px; 
+  }
+  .icons a {
+  padding: 10px;
+  margin: 8px;
+  }
+  .icons p {
+    padding: 25px;
+  }
+  .container1 {
+   width: 70%;
+   display: flex;
+   aspect-ratio: 2/1;
+  }
+  .header {
+    display: flex;
+    position: relative;
+    padding: 10px;
+  }
+  .container2 {
+     width: 30%; 
+     border: 2px solid #686060;
+    border-radius: 6px; 
+    background-color: #a2abab; 
+     aspect-ratio: 1/1; 
+  }
+   input,textarea {
+    border: 1px solid #8f8484;
+    padding: 6px 10px;
+    border-radius: 6px;
+    width: 75%;
+    box-sizing: border-box;
+    margin: 10px 45px;
+    resize: vertical;
+    margin-top: 19px;
+  }
+  .container2 {
+    text-align: center;
+  } 
+  .submain {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .submain h1 {
+    padding: 5px 10px;
+  }
+  .submain p {
+    padding: 5px 20px;
+  }
+  .main img {
+    width: 200px;
+    height: 200px;
+  }
+  .main a {
+    text-decoration: none;
+    color: black;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    padding: 40px;
+  }
+  .wrapper h3, .wrapper p {
+    text-align: center;
+  }
+  .main h3 {
+    padding: 8px 15px;
+  }
+  .main p {
+    padding: 2px 2px;
+  }
+  .wrapper {
+    display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  }
+  .carousel {
+    position: relative;
+    width: 1200px;
+}
+.carousel .main {
+    cursor: pointer; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+.main img {
+  object-fit: cover;
+  margin-left: 30px;
+  width: calc(200% / 3);
+}  
+.carousel i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-145%);
+}
+.carousel i:first-child {
+    left: 40px;
+  }
+  .carousel i:last-child {
+    right: 69px; 
+  }
+  .carousel .main{
+    cursor:pointer;
+    overflow: hidden;
+    white-space:nowrap ;
+  } 
+  .footer {
+      padding: 30px;
+      background-color: rgb(41, 37, 41);
+      color: cornsilk;
+      text-align: center;
+  }
+  @media only screen and (max-width: 1140px){
+    .contact img {
+       width: 200px;
+  }
+    .icons {
+      margin: 20px;
+      font-size: 20px;
+  }
+  .details {
+    padding: 20px;
+    margin: 5px;
+  }
+.burger {
+  display: none;
+}
+.carousel i:last-child {
+  right: 58px;
+}
+  @media only screen and (max-width: 990px){
+    .icons {
+      margin: 2px;
+    }
+    .icons a {
+      padding: 8px;
+      margin: 3px;
+   }
+  }
+   .container2 {
+    margin: 0px 30px;
+} 
+ input, textarea {
+margin: 10px 30px;
+ }
+ .carousel i:last-child {
+  right: 45px;
+}
+  }
+  @media only screen and (max-width: 890px){
+.main{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.main p {
+  margin-bottom: 13px;
+}
+.carousel i:first-child {
+  left: -20px;
+}
+.carousel i:last-child {
+  right: -13px;
+}
+.wrapper h3, .wrapper p {
+  margin-right: 100px;
+}
+  }
+  @media only screen and (max-width: 720px){
+    nav h1 {
+      margin: 16px;
+     }
+    nav .mainmenu { 
+      height: 30vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background:rgb(90 84 90);
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+       display: none;
+      }
+      nav .mainmenu .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+      nav .openmenu {
+        display: block;
+      }
+      .header {
+        display: block;
+        padding: 7px;
+      }
+      .container1 {
+        aspect-ratio: 1/1;
+        width: 100%;
+      }
+      .container2 {
+        width: 100%;
+        aspect-ratio: 1/1;
+        margin: 15px 0;
+      }
+     input, textarea {
+      padding: 10px 10px;
+      margin-top: 20px;
+    margin-bottom: 15px;
+    }
+  .icons a {
+    padding: 5px;
+    margin: 1px;
+}
+.icons p {
+  padding: 10px;
+}
+.burger {
+  display: block;
+}
+.contctsec {
+  height: 70%;
+}
+.wrapper h3, .wrapper p {
+  margin-right: 60px;
+}
+  }
+  @media only screen and (max-width: 600px)
+  {
+    /* .navbar h2{
+        margin-right: 0;
+      } */
+      nav h1 {
+        margin: 16px;
+       }
+    #menu {
+        width: 90%;
+   }
+  .contctsec {
+       height: 60%;
+    }
+  .contact {
+    padding: 5px;
+    margin: 5px;
+  }
+  .contact img {
+    width: 150px;
+}
+.details {
+  padding: 10px;
+  margin: 0px;
+}
+.icons {
+  margin: 1px;
+}
+.icons a {
+  padding: 4px;
+  margin: 2px;
+}
+.icons p {
+  padding: 12px;
+}
+.header {
+  display: block;
+  padding: 7px;
+}
+.container1 {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.container2 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 15px 0px;
+}
+input, textarea {
+  padding: 7px;
+}
+.wrapper h3, .wrapper p {
+  margin-right: 0px;
+}
+  }
+  @media only screen and (max-width: 480px) {
+   nav {
+    padding: 10px;
+   }
+   .contctsec {
+    height: 110%;
+  }
+    .contact {
+    display: block;
+    width: 48%;
+   }
+   .contact img {
+    width: 120px;
+}
+.icons {
+  margin: 1px;
+  margin-bottom: 100px;
+  width: 50%;
+}
+.icons a {
+  padding: 4px;
+  margin: 0;
+}
+   .icons p {
+    padding: 0;
+}
+.container2 input, textarea {
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.main {
+  display: block;
+padding: 10px 60px;
+}
+.wrapper {
+  padding: 0px 1px;
+}
+}
